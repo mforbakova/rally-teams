@@ -1,0 +1,12 @@
+services:
+	- App\Router\RouterFactory::createRouter
+	- App\Model\User
+	- App\Model\Team
+
+
+search:
+	-
+		in: %appDir%
+		classes:
+			- *Factory
+			- *Facade

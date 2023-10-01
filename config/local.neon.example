@@ -1,0 +1,12 @@
+parameters:
+    doctrine:
+        host: localhost
+        user: root
+        password: root
+        dbname: rally
+
+services:
+    cache.storage: Nette\Caching\Storages\DevNullStorage
+
+doctrine.orm.cache:
+    defaultDriver: Doctrine\Common\Cache\ArrayCache
